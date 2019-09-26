@@ -23,6 +23,7 @@ namespace Wildlife
         Console.WriteLine("Age: " + animal.GetAge());
         Console.WriteLine("Gender: " + animal.GetGender());
         Console.WriteLine("They are from: " + animal.GetPlaceOfBirth());
+        Console.WriteLine("Current condition: " + animal.GetCondition());
       }
     }
 
@@ -62,6 +63,7 @@ namespace Wildlife
           Console.WriteLine("Enter its new condition.");
           string condition = Console.ReadLine();
           Animals[id].SetCondition(condition);
+          Main();
         }
       }
       else

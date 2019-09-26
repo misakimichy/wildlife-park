@@ -36,6 +36,10 @@ namespace Wildlife.Models
     {
       return PlaceOfBirth;
     }
+    public string GetCondition()
+    {
+      return Condition;
+    }
     public void SetCondition(string newCondition)
     {
       Condition = newCondition;
