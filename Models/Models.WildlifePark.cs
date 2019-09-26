@@ -4,41 +4,41 @@ namespace Wildlife.Models
 {
   class Animal
   {
-    public string Species;
-    public int Age;
-    public string Gender;
+    private string _species;
+    private int _age;
+    private string _gender;
 
-    public string PlaceOfBirth;
-    public string Condition;
+    private string _placeOfBirth;
+    private string _condition;
 
     public Animal (string species, int age, string gender, string placeOfBirth, string condition)
     {
-      Species = species;
-      Age = age;
-      Gender = gender;
-      PlaceOfBirth = placeOfBirth;
-      Condition = condition;
+      _species = species;
+      _age = age;
+      _gender = gender;
+      _placeOfBirth = placeOfBirth;
+      _condition = condition;
     }
 
     public string GetSpecies()
     {
-      return Species;
+      return _species;
     }
     public int GetAge()
     {
-      return Age;
+      return _age;
     }
     public string GetGender()
     {
-      return Gender;
+      return _gender;
     }
     public string GetPlaceOfBirth()
     {
-      return PlaceOfBirth;
+      return _placeOfBirth;
     }
     public string GetCondition()
     {
-      return Condition;
+      return _condition;
     }
     public void SetCondition(string newCondition)
     {
